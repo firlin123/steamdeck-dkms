@@ -2,6 +2,7 @@
 ```bash
 sudo apt update && sudo apt install git dpkg-dev debhelper dh-dkms -y
 git clone https://github.com/firlin123/steamdeck-dkms.git
+cd steamdeck-dkms
 dpkg-buildpackage -us -uc
 ```
 
