@@ -1,0 +1,8 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: steamdeck-dkms
+Source: https://github.com/firlin123/steamdeck-dkms.git
+
+Files: *
+Copyright:
+  2024, firlin123 <firlin123@gmail.com>
+License: GPL-2

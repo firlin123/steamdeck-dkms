@@ -1,0 +1,2 @@
+Makefile *.c usr/src/steamdeck-${env:DEB_VERSION_UPSTREAM}
+usr/share/initramfs-tools/modules.d

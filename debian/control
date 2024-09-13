@@ -1,0 +1,18 @@
+Source: steamdeck
+Section: kernel
+Priority: optional
+Maintainer: firlin123 <firlin123@gmail.com>
+Build-Depends:
+  debhelper-compat (=13),
+  dh-sequence-dkms,
+Standards-Version: 4.6.2
+Homepage: https://github.com/firlin123/steamdeck-dkms
+Vcs-Git: https://github.com/firlin123/steamdeck-dkms.git
+Vcs-Browser: https://github.com/firlin123/steamdeck-dkms
+Rules-Requires-Root: no
+
+Package: steamdeck-dkms
+Architecture: amd64
+Depends: ${misc:Depends}
+Conflicts: jupiter-dkms
+Description: Steam Deck EC sensors driver (DKMS)

@@ -1,0 +1,26 @@
+PACKAGE_NAME="steamdeck"
+PACKAGE_VERSION="#MODULE_VERSION#"
+
+MAKE="make all"
+CLEAN="make clean"
+
+# steamdeck (mfd)
+BUILT_MODULE_NAME[0]="steamdeck"
+DEST_MODULE_LOCATION[0]="/extra/drivers/mfd"
+
+# steamdeck-hwmon
+BUILT_MODULE_NAME[1]="steamdeck_hwmon"
+DEST_MODULE_LOCATION[1]="/extra/drivers/hwmon"
+DEPENDS[1]="steamdeck"
+
+# steamdeck-leds
+BUILT_MODULE_NAME[2]="steamdeck_leds"
+DEST_MODULE_LOCATION[2]="/extra/drivers/leds"
+DEPENDS[2]="steamdeck"
+
+# steamdeck-extcon
+BUILT_MODULE_NAME[3]="steamdeck_extcon"
+DEST_MODULE_LOCATION[3]="/extra/drivers/extcon"
+DEPENDS[3]="steamdeck"
+
+AUTOINSTALL="yes"
