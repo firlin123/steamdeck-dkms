@@ -3,6 +3,7 @@ obj-m += steamdeck_hwmon.o
 obj-m += steamdeck_leds.o
 obj-m += steamdeck_extcon.o
 
+KERNELRELEASE ?= $(shell uname -r)
 KERNEL_DIR ?= /lib/modules/$(KERNELRELEASE)/build
 
 all:
