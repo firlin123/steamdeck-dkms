@@ -1,3 +1,12 @@
+steamdeck (6.8.12-valve2+1) noble; urgency=medium
+
+  * Respect the dkms -k <version> argument (PR #2):
+    - Use the KERNELRELEASE environment variable instead of uname -r
+      to ensure compatibility with 'dkms install -k <version>'.
+    - Add uname -r fallback for backward compatibility.
+
+ -- firlin123 <firlin123@gmail.com>  Sun, 21 Dec 2025 02:25:00 +0300
+
 steamdeck (6.8.12-valve2) noble; urgency=medium
 
   * Initial release
