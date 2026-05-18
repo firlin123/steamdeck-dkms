@@ -1,3 +1,12 @@
+steamdeck (6.8.12-valve2+2) noble; urgency=medium
+
+  * Fix DKMS build failure during kernel updates (issue #3):
+    - Pass the target kernel version explicitly to Makefile via
+      KERNELRELEASE=$kernelver.
+    - Remove deprecated DKMS CLEAN command to avoid build warnings.
+
+ -- firlin123 <firlin123@gmail.com>  Mon, 18 May 2026 14:36:00 +0300
+
 steamdeck (6.8.12-valve2+1) noble; urgency=medium
 
   * Respect the dkms -k <version> argument (PR #2):

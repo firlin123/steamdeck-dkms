@@ -1,8 +1,7 @@
 PACKAGE_NAME="steamdeck"
 PACKAGE_VERSION="#MODULE_VERSION#"
 
-MAKE="make all"
-CLEAN="make clean"
+MAKE="make KERNELRELEASE=$kernelver all"
 
 # steamdeck (mfd)
 BUILT_MODULE_NAME[0]="steamdeck"
